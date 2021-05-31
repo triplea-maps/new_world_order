@@ -1,0 +1,3 @@
+map_name: new_world_order
+games:
+- {game_name: New World Order, file_name: new_world_order.xml}
