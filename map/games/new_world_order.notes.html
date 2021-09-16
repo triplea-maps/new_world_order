@@ -1,0 +1,718 @@
+<html>
+<body bgcolor="DADADA" align="center">
+
+<div style="text-align: center;">
+<br>
+<img src="nwoi.jpg"/>
+  	
+<br><span style="font-size:280%;color:000000;"></span><b><span style="font-size:280%;color:660000;">NEW WORLD ORDER</span></b><span style="font-size:280%;color:000000;"></span>
+<br>
+
+
+<br><span style="font-size:120%;000000"colspan="2"><b>1.8</b></span><span style="font-size:90%;000000">.7</span></th>
+
+
+<br><span style="font-size:70%;000000">Upgraded? Check the version history for changes!</span>
+<br>
+<br>
+<br>
+
+<b>Its the 1.Septemeber 1939 at 4.45cet </b> <br>
+<b>The German operation FALL WEISS just started </b> <br>
+<b>How will the fate of the World turn? ... </b> <br>
+<br>
+<br>
+<br><span style="font-size:120%"><b>Game Design by Sieg</b></span>
+<br><span style="font-size:110%">and ErnieBommel</span>
+<br>Relief Tiles and Map Skins by: Sieg, Gudkarma and Pulicat
+<br>
+<br>
+<br>
+<br> The ruleset of the "Revised" version (ww2v2) of a well known board game is used as a basis. Deviations, extensions and exceptions from these are all listed in these Game Notes.<br>
+<br>
+<br>
+
+<table border="1"bgcolor="ABABAB">
+	<tr>
+	<th style="font-size:110%;000000"bgcolor="FEECE2"colspan="2">Alliances</th>
+	</tr>
+	<tr>
+	<th bgcolor="ABABAB">Axis</th>
+	<th bgcolor="BDBDBD">Allies</th>
+	</tr>
+	<tr>
+	<td bgcolor="ABABAB">Germany</td>
+	<td bgcolor="BDBDBD">Russia</td>
+	</tr>
+	<tr>
+	<td bgcolor="ABABAB">Italy</td>
+	<td bgcolor="BDBDBD">France</td>
+	</tr>
+	<tr>
+	<td bgcolor="ABABAB"></td>
+	<td bgcolor="BDBDBD">Colonial French</td>
+	</tr>
+	<tr>
+	<td bgcolor="ABABAB">Finland</td>
+	<td bgcolor="BDBDBD">UK</td>
+	</tr>
+	<tr>
+	<td bgcolor="ABABAB">Romania</td>
+	<td bgcolor="BDBDBD">US</td>
+	</tr>
+</table>
+
+<br><em>(Nations listed in their <b>Turn Order</b>. Alternatively, refer to the "Stats" tab.)</em>
+<br>
+<br>
+<br>
+
+<table border="1"bgcolor="ABABAB">
+	<tr>
+	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="7">Land Units</th>
+	</tr>
+
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="BDBDBD">
+	<td>Infantry</td>
+	<td>1</td>
+	<td>2</td>
+	<td>1</td>
+	<td>2</td>
+	<td>S</td>
+	<td>isSupportable</td>
+	</tr>
+	
+	<td>Elite</td>
+	<td>2</td>
+	<td>2</td>
+	<td>1</td>
+	<td>3</td>
+	<td>S</td>
+	<td>isSupportable</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>ArmoredCar</td>
+	<td>2</td>
+	<td>1</td>
+	<td>2</td>
+	<td>3.5</td>
+	<td>S</td>
+	<td>canBlitz, (get 2 for 7)</td>
+	</tr>
+	
+	<td>Artillery</td>
+	<td>2</td>
+	<td>2</td>
+	<td>1</td>
+	<td>3.5</td>
+	<td>L</td>
+	<td>givesSupport, (get 2 for 7)</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Mot.Inf</td>
+	<td>1</td>
+	<td>3</td>
+	<td>3</td>
+	<td>4</td>
+	<td>L</td>
+	<td>canBlitz</td>
+	</tr>
+	
+	<td>Mech.Inf</td>
+	<td>2</td>
+	<td>2</td>
+	<td>3</td>
+	<td>6</td>
+	<td>L</td>
+	<td>canBlitz, givesSupport</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Panzer/Armour</td>
+	<td>3</td>
+	<td>3</td>
+	<td>2</td>
+	<td>5</td>
+	<td>L</td>
+	<td>canBlitz</td>
+	</tr>
+	
+	<td>AAGun</td>
+	<td>0</td>
+	<td>1</td>
+	<td>1</td>
+	<td>5</td>
+	<td>L</td>
+	<td>isAA</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Factory</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>15</td>
+	<td>H</td>
+	<td>isFactory</td>
+	</tr>
+	
+	<tr>
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+
+
+<table border="1"bgcolor="ABABAB">
+	<tr>
+	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="6">Air Units</th>
+	</tr>
+
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="BDBDBD">
+	<td>EarlyFighter</td>
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	<td>8</td>
+	<td>canLandOnCarrier</td>
+	</tr>
+	
+	<td>Fighter</td>
+	<td>3</td>
+	<td>4</td>
+	<td>4</td>
+	<td>10</td>
+	<td>canLandOnCarrier</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Bomber</td>
+	<td>4</td>
+	<td>1</td>
+	<td>6</td>
+	<td>15</td>
+	<td>canDoSBR</td>
+	</tr>
+
+	<tr>
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+
+<table border="1"bgcolor="ABABAB">
+	<tr>
+	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="6">Naval Units</th>
+	</tr>
+
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="BDBDBD">
+	<td>T.boat</td>
+	<td>2</td>
+	<td>1</td>
+	<td>1</td>
+	<td>5</td>
+	<td></td>
+	</tr>
+	
+	<td>Transport</td>
+	<td>0</td>
+	<td>1</td>
+	<td>2</td>
+	<td>7</td>
+	<td>Transport up to 1 S + 1 S/L unit</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Submarine</td>
+	<td>2</td>
+	<td>2</td>
+	<td>2</td>
+	<td>7</td>
+	<td>isSubmarine</td>
+	</tr>
+
+	<td>Destroyer</td>
+	<td>3</td>
+	<td>3</td>
+	<td>2</td>
+	<td>11</td>
+	<td>isDestroyer</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Cruiser</td>
+	<td>3</td>
+	<td>3</td>
+	<td>2</td>
+	<td>13</td>
+	<td>Transport up to 1 S unit, canBombard</td>
+	</tr>
+	
+	<td>Carrier</td>
+	<td>1</td>
+	<td>3</td>
+	<td>2</td>
+	<td>14</td>
+	<td>Transport up to 2 air units</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Battleship</td>
+	<td>4</td>
+	<td>4</td>
+	<td>2</td>
+	<td>21</td>
+	<td>isTwoHit, canBombard</td>
+	</tr>
+
+	<tr>
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>special abilities</th>
+	</tr>
+</table>
+<br>
+
+
+
+
+<table border="1"bgcolor="ABABAB">
+	<tr>
+	<th style="font-size:120%;000000"bgcolor="FEECE2"colspan="7">Special Units</th>
+	</tr>
+
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr bgcolor="BDBDBD">
+	<td>BigArmour</td>
+	<td>4</td>
+	<td>4</td>
+	<td>2</td>
+	<td>7</td>
+	<td>L</td>
+	<td>canBlitz, *</td>
+	</tr>
+	
+	<td>Katjusha</td>
+	<td>3</td>
+	<td>1</td>
+	<td>3</td>
+	<td>6</td>
+	<td>L</td>
+	<td>canBlitz, givesSupport, *</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Me262</td>
+	<td>4</td>
+	<td>2</td>
+	<td>5</td>
+	<td>12</td>
+	<td></td>
+	<td>canLandOnCarrier, canDoSBR, *</td>
+	</tr>
+
+	<td>Lancaster</td>
+	<td>5</td>
+	<td>2</td>
+	<td>8</td>
+	<td>20</td>
+	<td></td>
+	<td>canDoSBR, *</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>B29</td>
+	<td>5</td>
+	<td>2</td>
+	<td>8</td>
+	<td>20</td>
+	<td></td>
+	<td>canDoSBR, *</td>
+	</tr>
+	
+	<td>S.Sub</td>
+	<td>3</td>
+	<td>3</td>
+	<td>3</td>
+	<td>10</td>
+	<td></td>
+	<td>isSubmarine, *</td>
+	</tr>
+	
+	<tr bgcolor="BDBDBD">
+	<td>Bunker</td>
+	<td>0</td>
+	<td>3</td>
+	<td>0</td>
+	<td>6</td>
+	<td></td>
+	<td>isTwoHit, read below */**</td>
+	</tr>
+
+	<tr>
+	<th>Unit name</th>
+	<th>att</th>
+	<th>def</th>
+	<th>move</th>
+	<th>cost</th>
+	<th>size</th>
+	<th>special abilities</th>
+	</tr>
+
+	<tr>
+
+	<th style="font-size:100%;000000"bgcolor="990000"colspan="7">*<b>All SPECIAL UNITS including BUNKERS may NOT be bought<br> BEFORE ROUND 4</b></th>	
+	</tr>
+
+	<tr>
+	<td style="font-size:100%;000000"bgcolor="FEECE2"colspan="7">**<b>BUNKER RULES</b><br> <ul><li>To Turn OFF special units, deselect "Use Triggers" in options.<li>For every territory, owned at the start of the turn, a maximum of <br>ONE Bunker can be purchased PER TURN.</ul></td>
+	</tr>
+
+</table>
+
+
+
+<br>
+<div style="text-align: center;">
+<br>==========================================================
+<br>
+<h1 style="text-align: center;font-size:120%;000000"><em>Rule Clarifications and Hints</em></h1>
+
+
+<div style="text-align: center;">
+<br> <b>Rules</b>
+<br>
+<div style="text-align: left;">
+	<ul>
+	<li>The ruleset of the "REVISED" version of a well known board game are used as a basis.<br><em>TripleA allows only valid moves, so it is possible to start playing without knowing the rules. There are a few exceptions to this, which are listed under "Default Rules" below.</em></li>
+	<li>It is possible to play with LHTR style carrier-fighter production/movement rules by checking the carrier-ftr related property in the game options.
+	<li>A move illegal using dice is illegal under LL too.<br><em>A move legal using dice is legal under LL too.</em></li>
+	<li>Neutrals can be attacked in NWO, no penalties apply.</li>
+	<li>Territories can only be strategically bombed up to their value.<br><em>(TTL = Territory Turn Limit)</em></li>
+	<li>A couple of extra units exist in NWO, and some basic units are slightly different. Their abilities are listed in the "Units" section above, as well as restrictions applying to Bunkers and Red Dot Units.<br/><em>Bunkers and Red Dot Units can be turned off by deselecting "Use Triggers" in the game options.</em></li>
+	<li>Only 1 bunker may be placed per territory per turn. Bunkers do not use up factory slots. Territories may have unlimited total bunkers in them. To limit total bunkers to the value of a territory, deselect "Unlimited Constructions". The game options "More Constructions with/without Factory" can be turned off to limit total bunkers to 1 per territory total, in territories with/without Factories.</li>
+	</ul>
+<div style="text-align: center;">
+<br> <b>Default Rules for Disputable Situations</b>
+<br>
+<div style="text-align: left;">
+	<ul>
+	<li>Read the clarified Bunker Rules right below the unit stats!</li>
+	<li>Manually (two-step) flying over Neutral territory during combat movement is considered illegal, despite being technically possible.<br><em>(helps balance G2-Paris take)</em></li>
+	<li>Carrier-Ftr movement is handled according to "REVISED" Rules, with the following exceptions and clarifications:
+	<br>Since the engine does not validate Fighter movement completely, this means explicitly: for EVERY Fighter, that has to be a potential landing spot provided, and YOU must make sure to follow the rules, as follows:
+		<ul><li>Using a single Carrier for more than 2 Fighters, or for 2 Fighters going different directions, requiring different Carrier positions, is NOT allowed - even if LowLuck would guarantee for a Fighter to be lost.</li>
+		<li>It must be shown that all Fighters can land during Combat Move phase, and that any Carriers they will be landing on CAN move there DURING Combat Move phase, with legal movements.</li>
+		<li>The Carriers that will be picking up the aircraft must be CAPABLE of moving to their Pickup Destination DURING Combat Movement phase, BUT they do not actually have to make the movement until the Non-Combat Movement phase.</li>
+		<li>You may NOT assume that you can move THROUGH a Cleared sea zone that has enemy units. This would be a violation of the rule above that the move must be Legal DURING the CM phase.</li>
+		<li>IF the pickup destination IS a sea zone that contains enemy units, THEN enough Carriers to pick up all air units must move into that pickup destination During Combat Movement phase (and then engage in combat). 
+			These Carriers must move during CM phase because we are NOT allowed to assume that the sea zone would be Cleared, and we MUST show that they can do the pickup using moves that are Legal during the Combat Movement phase.</li>
+		<li>IF the pickup destination does NOT contain any enemy units, THEN the Carriers may wait until the Non-Combat Movement phase to actually make their movement. If the fighters do not survive the Carrier does not have to move to the pickup destination point, but if any fighters do survive they Must be picked up.</li>
+		<li>Examples:
+			<ul><li>On Moving Through A Cleared Sea Zone:
+			<br>In Revised and LHTR rules, it is legal to make moves under the assumption that all your dice are hits and all enemy's dice are misses, thereby allowing the assumption that the carrier could move through the zone in non-combat-move phase.
+			<br>However, <b>in NWO this move is considered illegal</b>, <em>regardless of using Dice or LowLuck</em>
+			<br>Example: Sea Zones A, B, C are in a line, you have 1 carrier, 1 ftr [with only <b>2</b> movement left], and 1 sub in SZ A. In SZ B there are 80 enemy sea units, and in SZ C there are enemy transports. 
+			<br>With Revised and LHTR rules, if you attack the fleet in SZ B with even a single unit, you may then attack the transports in SZ C with your ftr, because you get to assume that you will win the battle in SZ B and then pick up that ftr with your carrier during NCM.
+			<br>This move is illegal in NWO, because you must show that the carrier can move there during combat movement, and during combat movement the carrier can not move there because there are enemy units in the way.
+			</li>
+			<li>On Moving Into An Enemy Controlled Sea Zone:
+			<br>Example: Sea Zones A, B, C are in a line, you have 1 carrier, and 1 ftr [with only <b>3</b> movement left]. In SZ B there are some enemy units, and in SZ C there are enemy transports.
+			<br>In this example, if the air attack SZ C then they must be picked up in SZ B. Since SZ B has enemy units, this move would be illegal unless we can show that we can pick up the units with legal moves during combat-move phase. Simply attack the enemy units in SZ B with a submarine or warship is not enough, because we are not allowed to assume the sea zone would be cleared for a non-combat move of the carriers.
+			<br>Instead, we are required by the rules to send enough carriers to SZ B during combat movement (and those carriers will engange in combat with the enemy units in SZ B). If we send the carriers, it is now legal because we have shown how we will pick up the units using moves made during comat-movement phase.
+			</li>
+			</ul>
+		</li>
+	</ul></li>
+	</ul>
+<div style="text-align: center;">
+<br> <b>Differences due to the New Phase Order</b>
+<br>
+<div style="text-align: left;">
+	<ul>
+	<li>Under the New Phase Order (combat movement before purchases), one knows about any air losses occurring during combat movement due to AA fly-overs, prior to the purchase phase.
+	<li>Under the New Phase Order, a nation which is able to conquer a COMPLETELY empty enemy capital during combat move, could spend all captured money right away in the same turns purchase phase.<br><em>It is thus advised to leave one Inf behind if abandoning a capital. Prominent early example is Paris in round 3.</em>
+	</ul>
+<div style="text-align: center;">
+<br><b>Strategical Hints for Beginners</b>
+<br>
+<div style="text-align: left;">
+	<ul>
+	<li>At beginners level, Allies are easier to play. At medium level, Axis is easier (once accustomed to a good opening).
+	<li>Mastery of the units is crucial. Different units are needed for different tasks. Inf(antry) are the best value unit in terms of raw power, if needed production capacity is no issue, BigArmor give the most punch if it is. Concerning navy, air units give most all around flexibility, while t-boats give the least, but provide the most raw power for the money. 
+		When a movement of 2 is enough, do not buy SuperSubs - subs are much better then. Elites are bad value, but can maximize an amphibious threat.
+	<li>Early Axis objectives: Tunis should fall in round 1, Morocco in round 2, Greece in round 2 or 3 and Paris in round 3. Germany should be able to advance at least into Ukrainskaya. In case Finland is intended to hold, do not underestimate German support obligations via the Baltic. Spain may give Italy or Germany considerable extra income - careful though!
+	<li>Early Allies objectives: UK should get Ankara, Iran and Iraq quickly. The US should prepare some good landing operation somewhere. Russia should exert some pressure to Finland. Consider strategical retreats for the French and the Colonials.
+	<li>Usual hot spots include: Finland, Leningrad, Donetsk, Ankara-Greece, sz25 or the English Chanel, Gibraltar, Eastern Med fleets.
+	<li>UK ftrs on French carriers experience awesome effective action range.
+	<li>Paris can be made to fall during Germany's 2nd turn ( less then 1% total chance of failure) Expensive though!
+	<li>Russia can pressure Finland hard, or attempt to stop Germany early in Ukrainskaya.
+	<li>As Russia, watch out for Estonia! Axis can open the path for additional units by using (Italians), Finns(air) or Romanians(!).
+	<li>Western allies can successfully invade through Spain, France, Scandinavia or even Italy itself (in the order of skill required).
+	</ul>
+<div style="text-align: center;">
+
+<br>==========================================================
+<br>
+<div style="text-align: center;">
+<h1 style="text-align: center;font-size:120%;000000"><em>Historical Strategies</em></h1>
+<br>
+<br>
+<img src='german_advance.jpg' border='0'/>
+<br>
+<br>
+<br>
+<img src='allied_advance.jpg' border='0'/>
+<br>
+
+<br> <b>Timeline Animation</b>
+<br>
+<img src='secondworldwareurope.gif' border='0'/>
+
+<br>
+<br>==========================================================
+<br>
+<br>
+<br> In NWO, Balance and Replay Value come first. 
+<br> Historical Accuracy is secondary.
+<br>
+<br>
+<div style="text-align: center;">
+<br>==========================================================
+<br>
+<h1 style="text-align: center;font-size:120%;000000"><em>Thanks to</em></h1>
+<br> # Sieg for making NWO and going through about 20 balancing cycles with it
+<br> # Ernie Bommel for his Work on NWO, Balancing, Game Notes, and Hosting
+<br> # Hippotamus, Ice, Admetus, Garbled and Axisgeneral for helping with these balancing cycles
+<br> # Lebowski for some of his units being used in NWO
+<br> # Krustyshorts and Corsair for making the great unofficial 1.5 version
+<br> # Odessa, GuerillaJ, Ice, Warmonger2, Smallman, Ready, Judgementday, and Frontline for all their input, ideas, suggestions and feedback
+<br> # Gneis for making a joined version 1.6EB+Gneis version with EB
+<br> # Gudkarma, Pulicat, and Sieg for their cool Relief Tile sets
+<br> # Crystalct for all his wonderful nation specific unit updates
+<br> # U-boat, ubernaut and Veqryn for the new and sharp set of flags (available as alternative set, due to request by sieg)
+<br> # Blackknight for supplying axis and allied naval units facing opposing directions
+<br> # Dan Slayer and Hue for their units (armored cars, tanks, bomber, destroyers)
+<br> # Special thx to Kevin Moore for adapting the AI especially for NWO, and to Comrade Kev for his ongoing and detailed engine-wise NWO support, and Veqryn for all his valuable hints and input
+<br> # And of course, a big thx in general - all the engine improvements are far too numerous to be listed here - to SGB, ComradeKev, Veqryn, SquidDaddy and the other TripleA developers, Bung for hosting the lobby. Big thx to ComradeKev also for dealing with the TripleA legal issues
+<br> # Almost last, surely not least, thx to Larry Harris for A&A
+<br> # And finally, thx to the pleasant community as a whole, and specifically to all the NWO fans who play and support this map
+<br>
+<br>==========================================================
+<br>
+<h1 style="text-align: center;font-size:120%;000000"><em>Version History</em></h1>
+All changes by EB unless otherwise specified<br>
+
+<div style="text-align: center;">
+<br> <b>Changes NWO1.8.6 to NWO1.8.7:</b>
+<div style="text-align: left;">
+General:
+	<ul>
+	<li>Deleted connection from SZ 58 to Lebanon. (veqryn)</li>
+	<li>Updating air movement rules for disputed situations to actually match how most people interpreted and played the NWO rules. (veqryn, ice, toc4 rules discussion)</li>
+	</ul>
+
+
+<div style="text-align: center;">
+<br> <b>Changes NWO1.8.5 to NWO1.8.6:</b>
+<div style="text-align: left;">
+General:
+	<ul>
+	<li>Renamed to remove special characters from folder and xml names. (veqryn)</li>
+	<li>Included with TripleA download. (veqryn)</li>
+	<li>Coded and Added "Low Luck for AntiAircraft" as an option, so that people may play with dice for normal units and LL for AA units only. (veqryn)</li>
+	<li>Coded and Added "Low Luck for Bombing and Territory Damage" as an option. If true, strat bombing will only rolls 3s and 4s, no other numbers. (veqryn)</li>
+	<li>Coded and Added "Units Repair Hits Start Turn" as an option, which if true will have Battleships and Bunkers (any 2-hitpoint unit) only repair damage at the beginning of their owner's turn. (veqryn)</li>
+	<li>Coded and added Bunker rules, included as an option. No longer need edit mode to place bunkers. (code by crystalct and veqryn)</li>
+	<li>Bunkers (Constructions) code updated to work differently.  Factories are now also isConstructions for the purposes of placement. New game properties listed below (all On by default). (veqryn)
+	<ul><li>"More Constructions with/without Factory" - If ON then you may have a total number of bunkers up to the PU value of a territory (minimum 1), in territories with/without factories. If OFF then you may have only 1 total bunker per territory.</li>
+		<li>"Unlimited Constructions" - If ON it over-rides above 2 game properties to allow infinite total bunkers per territory. If OFF then things are determined by the above 2 game properties.</li>
+		<li>No matter what, you can only place 1 bunker per territory per round. Bunkers do not take up a factory slot when being placed.</li></ul></li>
+	<li>Updated NWO to take advantage of triggered rule changes to have red dot units and bunkers not appear for purchasing during beginning turns, and the ability to turn them off completely by deselecting "Use Triggers". (added to nwo by Veqryn, code by Squid Daddy)</li>
+	</ul>
+
+<div style="text-align: center;">
+<br> <b>Changes NWO1.8.1 to NWO1.8.5:</b>
+<div style="text-align: left;">
+General:
+	<ul>
+	<li>Combined Sieg and EB versions into a unified NWO.
+	<li>Allowed as optional property:<br>*LHTR Carrier Production rules<br><em>Enable to have LHTR style carrier-fighter production/movement/placement.</em>
+	<li>Base Tiles (2 optional, see inside zip)
+	<li>Name change: Tankette -> ArmoredCar
+	<li>Unit graphics changed: Armored cars (Axis + Russia), BigArmor (Germany, US and UK, Russia) (thx Dan and Hue)
+	<li>Map skins available again, including a completly new relief tile set by pulicat.
+	<li>Various measures to ensure savegames still work with this new version.
+	</ul>
+	
+<div style="text-align: center;">
+<br> <b>Changes NWO1.7.7 to NWO1.8.1 (all done by sieg):</b>
+<div style="text-align: left;">
+General:
+	<ul>
+<li> Removed 1 Neutral Inf. from Lodz
+<li> Enhanced Relief Tiles
+<li> Enhanced Base Tiles
+<li> Flag graphics fine-tuned
+<li> Additions and some lay-out changes to the Game Notes 
+<li> Mirrored Russian land units
+<li> Changed unit graphics: <br>Russian bomber and pale destroyers replaced (thx to Dan + Hue)<br>Some fighters size corrected
+<li> Updatet smallMap
+	</ul>
+		
+<div style="text-align: center;">
+<br> <b>Changes NWO1.7.6 to NWO1.7.7:</b>
+<div style="text-align: left;">
+General:
+	<ul>
+	<li>Series of small tweaks to unit graphics and Game Notes.
+	</ul>
+<div style="text-align: center;">
+<br> <b>Changes NWO1.7.2 to NWO1.7.6:</b>
+<div style="text-align: left;">
+Units and Map:
+	<ul>
+	<li>Bunker for the UK added to Gibraltar
+	<li>T.boat added for Italy in sz42
+	</ul>
+Rules:
+	<ul>
+	<li>Due to small TripleA engine changes, some of the "Default Rules for Disputable Situations" (see "Rules" section) have had small changes
+	</ul>
+Eye Candy:
+	<ul>
+	<li>Relief tiles (sieg) are included now. The old look can be restored by disabling "Map Details" from the "View" menu. Alternative sets of relief tiles (gudkarma) are available in the repository and once downloaded can be selected via "View"/"Map Skins" from the menu.
+	<li>Naval units of opposing factions now face each other have been mirrored (blackknight)
+	<li>Finnish, Romanian and Italian Elite as well as Romania, Finnish and Italian Fighters all got nation specific graphics (crystalct)
+	<li>Destroyers replaced again with a version better distinguishable from submarines (crystalct)
+	<li>Romanian units are slightly tweaked in color, to set them more apart from the Finnish units
+	<li>A complete alternative flag set (historical roundels) is available (U-boat, ubernaut, Veqryn)
+	</ul>
+General:
+	<ul>
+	<li>A multitude of minuscule errors has been fixed in the game xml and the other files, none of which was ever critical
+	</ul>
+<div style="text-align: center;">
+<br> <b>Changes NWO1.6 to NWO1.7:</b>
+<div style="text-align: left;">
+Units and Map:
+	<ul>
+	<li>BigArmor costs lowered by 1 to 7(8)
+	<li>Artillery costs lowered by 0.5 to 3.5(4)
+	<li>BB costs lowered by 3 to 21(24)
+	<li>Carrier 14(16), Cruiser 13(15), S.Sub 10(12) costs lowered by 2
+	<li>Destroyer 11(12), Submarine 7(8), Transport 7(8) and T.Boat 5(6) costs lowered by 1
+	<li>Russian starting money raised from 20 to 23
+	<li>Romanias starting money raised from 2 to 4
+	<li>UK has 2 t-boats in sz30 instead of just 1
+	<li>UK has 2 Inf in Jordan instead of 1
+	<li>Italy has 4 Inf in Albania instead of 3
+	<li>Mot.Inf can officially can Blitz now
+	</ul>
+Convenience:
+	<ul>
+	<li>Tech phase taken out (Tech use would be absurd in NWO).
+	<li>LL checked by default (although NWO plays well with dice!)
+	<li>New Phase Order: COMBAT MOVE / PURCHASE / combat / non-combat move / placement (for faster gameplay and for being more beginner friendly)
+	<li>Default rules for all situations where dispute may arise, including exploits.
+	</ul>
+Cosmetic:
+	<ul>
+	<li>New Game Notes
+	<li>Italian Elites distinguishable from German ones now
+	<li>Destroyer picture replaced with a better one
+	<li>Erroneous east/west territory names corrected
+	<li>Unit names changed:
+	<br>       Trucks        -->   Mot.Inf
+	<br>       Halftracks    -->   Mech.Inf
+	<br>       Scouts        -->   Tankettes
+	<br>       German Armour -->   Panzers
+	<li>XML file cleaned up
+	</ul>
+<div style="text-align: center;">
+<br> <b>Changes NWO1.4 to NWO1.6:</b>
+<div style="text-align: left;">
+	<ul>
+	<li>Tankette price upped from 3 to 3.5 (2 for 7PU)
+	<li>Me262 price lowered to 12
+	<li>Mot.Inf defense upped from 2 to 3
+	<li>BigArmor defense from 3 to 4, price from 7 to 8
+	<li>Cruisers transport 1 small unit now. Cost 15 (14).
+	<li>Bunkers now buyable 0/3/0/6 Two Hit (available after round 3 / for more details see Bunker description above!)
+	<li>+4 Inf Russia, divided over Kuby., Kazahk, Svedl.
+	<li>+3 PU starting money for Russia
+	<li>added 2 Bunkers to Leningrad
+	<li>added UK T-boat in sz30, UK Transport in sz31
+	<li>Dover (UK) upped to 2
+	<li>added US Bomber in w.US, Tank in Central US
+	<li>added Colonial Transport in sz59, inf in C.Algeria
+	<li>Lebanon, Syria, S.Canada (all Colonial) all +1 income
+	<li>Romania starting PU raised from 2 to 4
+	<li>Hungary income raised from 2 to 3
+	<li>added German T-boat in sz26
+	<li>Baleares raised from 0 to 1 income
+	</ul>
+	
+	
+<div style="text-align: center;">
+
+<tr>
+<th style="font-size:110%;color:660000;"><br>SIEG 2010<br></th>
+</tr>
+<tr>
+<th style="font-size:100%;color:660000;">and Ernie Bommel<br><br></th>
+</tr>
+<br>
+<br>
+<br>
+</body>
+</html>
